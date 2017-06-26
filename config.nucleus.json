@@ -1,13 +1,13 @@
 {
-    "title": "Telenor Frontend Component Library",
-    "files": [
-        "components/**/*.scss"
-    ],
-    "target": "dist",
-    "css": "styles/styleguide.css",
-    "namespace": "page",
-    "verbose": 3,
-    "counterCSS": null,
-    "staticLipsum": false,
-    "placeholderService": false
+  "title": "Telenor Frontend Component Library",
+  "files": [
+    "components/**/*.scss"
+  ],
+  "target": "dist",
+  "css": "styles/styleguide.css",
+  "namespace": "page",
+  "verbose": 3,
+  "counterCSS": null,
+  "staticLipsum": false,
+  "placeholderService": false
 }
