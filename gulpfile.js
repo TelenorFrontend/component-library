@@ -12,40 +12,41 @@ const buildFolder = 'dist';
 const componentsFolder = 'components';
 
 gulp.task('connect', function() {
-  connect.server({
-    root: buildFolder,
-    livereload: true
-  });
+    connect.server({
+      root: buildFolder,
+      livereload: true
+    });
 });
 
 gulp.task('connect:reload', function () {
-  gulp.src([
-    `${ buildFolder }/**/*.html`,
-    `${ buildFolder }/**/*.css`
+    gulp.src([
+        `${ buildFolder }/**/*.html`,
+        `${ buildFolder }/**/*.css`
     ]).pipe(connect.reload());
 });
  
 gulp.task('styleguide', (cb) => {
-  exec('nucleus', function (err, stdout, stderr) {
-    console.log(stdout);
-    console.error(stderr);
-    cb(err);
-  });
+    exec('nucleus', function (err, stdout, stderr) {
+        console.log(stdout);
+        console.error(stderr);
+        cb(err);
+    });
 });
  
 gulp.task('sass', () => {
-  return gulp.src([`${ componentsFolder }/styleguide.scss`])
-    .pipe(plumber())
-    .pipe(sourcemaps.init())
-    .pipe(sass({force: true}).on('error', sass.logError))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest(`${ buildFolder }/styles`));
+    return gulp.src([`${ componentsFolder }/styleguide.scss`])
+        .pipe(plumber())
+        .pipe(sourcemaps.init())
+        .pipe(sass({force: true}).on('error', sass.logError))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(`${ buildFolder }/styles`));
 });
 
 gulp.task('sass:watch', () => {
-  gulp.watch(
-    [`${ componentsFolder }/*.scss`, `${ componentsFolder }/**/*.scss`],
-    ['sass', 'styleguide', 'connect:reload']);
+    gulp.watch(
+        [`${ componentsFolder }/*.scss`, `${ componentsFolder }/**/*.scss`],
+        ['sass', 'styleguide', 'connect:reload']
+    );
 });
 
 gulp.task('styleguide:watch', ['styleguide', 'sass', 'connect', 'sass:watch'])
