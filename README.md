@@ -49,3 +49,9 @@ All lint warnings and errors (if any) should now appear in the console.
 * Open `Preferences`
 * Search for `stylelint` (or go to `Languages & Frameworks` > `Stylesheets` > `Stylelint`)
 * Click `Enable`
+
+### How do I enable stylelint in VS Code?
+
+* Open project in Code
+* A list of recommended plugins will pop up, for optimal dev environment add all
+* Success
