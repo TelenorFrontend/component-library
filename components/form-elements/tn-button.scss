@@ -1,0 +1,20 @@
+@import "tn-button-mixins";
+
+/**
+ * @atom Basic button
+ * @section Form elements
+ * @description
+ *  Standard button styling for action buttons
+ * @modifiers
+ *  .tn-button--disabled modifier for disabled buttons
+ * @markup
+ *  <button class="tn-button">Action button</button>
+ *  <button class="tn-button tn-button--disabled">Disabled button</button>
+ */
+.tn-button {
+  @include tn-button;
+
+  &--disabled {
+    @include tn-button--disabled;
+  }
+}

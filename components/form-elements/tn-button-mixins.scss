@@ -1,0 +1,27 @@
+@import "../_variables/form-elements";
+@import "../_variables/common";
+@import "../_variables/typography";
+
+/*
+ * @mixin Default button styling
+ * @section Form elements
+ */
+@mixin tn-button() {
+  padding: 0 $tn-padding--mobile-element-nonbordered;
+  transition: opacity .2s ease-in-out;
+  border: 0;
+  border-radius: $tn-border--mobile-element-border-radius;
+  background: $tn-color--brand;
+  color: $tn-color--white;
+  font-size: $tn-font-size--large;
+  line-height: $tn-height--mobile-element;
+  cursor: pointer;
+}
+
+/*
+ * @mixin Disabled button styling
+ * @section Form elements
+ */
+@mixin tn-button--disabled() {
+  opacity: .5;
+}
