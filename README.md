@@ -42,6 +42,41 @@ npm test
 
 All lint warnings and errors (if any) should now appear in the console.
 
+## Committing and releasing
+
+### Commit guidelines
+When commiting code for the repo you will need to use the [conventional commits guidelines](https://conventionalcommits.org/). This will be validated upon commit and helps us in several ways. It keeps a clean git history and helps creating a useful CHANGELOG when running a release.
+
+### Releasing new version
+We use [`standard-version`](https://github.com/conventional-changelog/standard-version) instead of the conventional npm version due to it's connection to conventional commits and the ability to create CHANGELOG automagically.
+
+To release a new version you can simply type
+```
+npm run release
+```
+
+This will make standard-version go through the commits and decide for itself what kind of version bump is needed (major, minor and patch). However, sometimes it's easier to explicitly state what kind of version you want to bump. To help with this, we've added three simple abstractions
+
+```
+npm run release:patch
+npm run release:minor
+npm run release:major
+```
+
+#### Release example
+
+You want to release a minor version of the repo.
+
+1. Add all your commits
+2. Run `npm run release:minor`
+3. Chore step:
+ + Run `npm i`
+ + Run `git add package-lock.json`
+ + Run `git commit -m "chore(package-lock): bump version"`  
+ - This step is due to the changing version number of package-lock _after_ you bump the `package.json`. 
+
+ 4. Run `git push --follow-tags origin master`
+ 5. (Optional) Run a npm publish
 ## FAQ
 
 ### How do I enable stylelint in Intellij IDEA?
