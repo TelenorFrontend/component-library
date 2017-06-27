@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "gulp",
+    "test": "stylelint components/**/*.scss",
     "watch": "gulp styleguide:watch"
   },
   "repository": {
@@ -24,7 +25,12 @@
     "gulp-plumber": "^1.1.0",
     "gulp-sass": "^3.1.0",
     "gulp-sourcemaps": "^2.6.0",
+    "gulp-stylelint": "^3.9.0",
     "nucleus-styleguide": "^1.1.1",
-    "sass-lint": "^1.10.2"
+    "sass-lint": "^1.10.2",
+    "stylelint": "^7.11.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.5.0",
+    "stylelint-scss": "^1.4.4"
   }
 }

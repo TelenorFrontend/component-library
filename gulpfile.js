@@ -5,6 +5,7 @@ const plumber = require('gulp-plumber');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const connect = require('gulp-connect');
+const gulpStylelint = require('gulp-stylelint');
 
 const exec = require('child_process').exec;
 
@@ -36,6 +37,11 @@ gulp.task('styleguide', (cb) => {
 gulp.task('sass', () => {
     return gulp.src([`${ componentsFolder }/styleguide.scss`])
         .pipe(plumber())
+        .pipe(gulpStylelint({
+            reporters: [
+                {formatter: 'string', console: true}
+            ]
+        }))
         .pipe(sourcemaps.init())
         .pipe(sass({force: true}).on('error', sass.logError))
         .pipe(sourcemaps.write())
