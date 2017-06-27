@@ -1,0 +1,21 @@
+@import "tn-input-mixins";
+
+/**
+ * @atom Basic input-field
+ * @section Form elements
+ * @description
+ *  Standard input styling for text/email/phone, etc
+ * @modifiers
+ *  .tn-input--invalid modifier for when input value is invalid
+ * @markup
+ *  <input class="tn-input" placeholder="Placeholder ...">
+ *  <input class="tn-input" value="value">
+ *  <input class="tn-input tn-input--invalid" value="invalid-value">
+ */
+.tn-input {
+  @include tn-input;
+
+  &--invalid {
+    @include tn-input--invalid;
+  }
+}

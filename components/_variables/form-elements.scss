@@ -1,0 +1,35 @@
+/*
+* @color Default input border color
+* @section Colors
+*/
+$tn-color--gray-border: #ddd;
+
+/*
+* @color Invalid input border color
+* @section Colors
+*/
+$tn-color--red-invalid: #d32f2f;
+
+/*
+* @nuclide Standard mobile-element height
+* @section Mobile
+*/
+$tn-height--mobile-element: 56px;
+
+/*
+* @nuclide Mobile element padding
+* @section Mobile
+*/
+$tn-padding--mobile-element-bordered: 16px;
+
+/*
+* @nuclide Mobile element (bordered) padding
+* @section Mobile
+*/
+$tn-padding--mobile-element-nonbordered: 15px;
+
+/*
+* @nuclide Mobile element border radius
+* @section Mobile
+*/
+$tn-padding--mobile-element-border-radius: 2px;
