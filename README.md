@@ -26,7 +26,7 @@ To run the styleguide in watch mode execute the following command:
 npm run watch
 ```
 
-This command starts the styleguide and compiles the current scss-files into the stylesheet. The styleguide will be available at [http://localhost:8888](http://localhost:888). Changes in the scss will automatically build and reload the styleguide.
+This command starts the styleguide and compiles the current scss-files into the stylesheet. The styleguide will be available at [http://localhost:8888](http://localhost:8888). Changes in the scss will automatically build and reload the styleguide.
 
 ## Adding your first component
 
