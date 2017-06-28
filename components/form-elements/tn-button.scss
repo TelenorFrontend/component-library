@@ -6,14 +6,23 @@
  * @description
  *  Standard button styling for action buttons
  * @modifiers
+ *  .tn-button--small modifier for smaller buttons
  *  .tn-button--disabled modifier for disabled buttons
  * @markup
  *  <button class="tn-button">Action button</button>
  *  <button class="tn-button tn-button--disabled">Disabled button</button>
+ *  <br>
+ *  <br>
+ *  <button class="tn-button tn-button--small">Small button</button>
+ *  <button class="tn-button tn-button--small tn-button--disabled">Small disabled button</button>
  */
 .tn-button {
   @include tn-border-box-everything;
   @include tn-button;
+
+  &--small {
+    @include tn-button--small;
+  }
 
   &--disabled {
     @include tn-button--disabled;

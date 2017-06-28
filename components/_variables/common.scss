@@ -11,10 +11,16 @@ $tn-color--brand: #007ace;
 $tn-color--white: #fff;
 
 /*
- * @nuclide Icon size
+ * @nuclide Standard icon size
  * @section Common
  */
-$tn-icon-size: 24px;
+$tn-standard-icon-size: 24px;
+
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+$tn-small-icon-size: 16px;
 
 /*
  * @nuclide Opacity normal

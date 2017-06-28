@@ -14,6 +14,12 @@
   cursor: pointer;
 }
 
+@mixin tn-button--small() {
+  padding: 0 $tn-spacing--small-element-nonbordered;
+  font-size: $tn-font-size--default;
+  line-height: $tn-height--small-element;
+}
+
 @mixin tn-button--disabled() {
   opacity: $tn-opacity-inactive;
 }
