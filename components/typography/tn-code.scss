@@ -1,0 +1,13 @@
+/**
+ * Light gray box with monospaced font used to display code
+ *
+ * @atom Basic code block
+ * @section Typography
+ * @markup
+ *  <div class="tn-code">Example code</div>
+ */
+.tn-code {
+  background-color: $tn-color--light-gray-background;
+  font-family: monospace;
+  padding: $tn-padding--main-content;
+}
