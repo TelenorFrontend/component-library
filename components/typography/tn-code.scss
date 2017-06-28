@@ -1,3 +1,5 @@
+@import "tn-code-mixins";
+
 /**
  * Light gray box with monospaced font used to display code
  *
@@ -7,7 +9,5 @@
  *  <div class="tn-code">Example code</div>
  */
 .tn-code {
-  padding: $tn-padding--main-content;
-  background-color: $tn-color--light-gray-background;
-  font-family: monospace;
+  @include tn-code;
 }

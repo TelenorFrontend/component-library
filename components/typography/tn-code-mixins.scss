@@ -1,0 +1,11 @@
+@import "../_variables/typography";
+
+/*
+ * @mixin Default code block styling
+ * @section Typography
+ */
+@mixin tn-code() {
+  padding: $tn-padding--main-content;
+  background-color: $tn-color--light-gray-background;
+  font-family: monospace;
+}
