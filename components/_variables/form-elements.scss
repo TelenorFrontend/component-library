@@ -11,25 +11,43 @@ $tn-color--gray-border: #ddd;
 $tn-color--red-invalid: #d32f2f;
 
 /*
+ * @nuclide Standard-element border radius
+ * @section Common
+ */
+$tn-border--standard-element-border-radius: 2px;
+
+/*
  * @nuclide Standard-element height
  * @section Common
  */
 $tn-height--standard-element: 56px;
 
 /*
- * @nuclide standard-element spacing
+ * @nuclide standard-element (bordered) spacing
  * @section Common
  */
 $tn-spacing--standard-element-bordered: 15px;
 
 /*
- * @nuclide Standard-element (bordered) spacing
+ * @nuclide Standard-element (nonbordered) spacing
  * @section Common
  */
 $tn-spacing--standard-element-nonbordered: 16px;
 
 /*
- * @nuclide Standard-element border radius
+ * @nuclide Small-element height
  * @section Common
  */
-$tn-border--standard-element-border-radius: 2px;
+$tn-height--small-element: 40px;
+
+/*
+ * @nuclide Small-element (bordered) spacing
+ * @section Common
+ */
+$tn-spacing--small-element-bordered: 11px;
+
+/*
+ * @nuclide Small-element (nonbordered) spacing
+ * @section Common
+ */
+$tn-spacing--small-element-nonbordered: 12px;

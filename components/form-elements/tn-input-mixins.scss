@@ -17,6 +17,11 @@
   color: $tn-color--red-invalid;
 }
 
+@mixin tn-input--small() {
+  height: $tn-height--small-element;
+  padding: 0 $tn-spacing--small-element-bordered;
+}
+
 // Icon input
 
 @mixin tn-inputwrap() {
@@ -24,13 +29,23 @@
   height: $tn-height--standard-element;
 }
 
+@mixin tn-inputwrap--small() {
+  height: $tn-height--small-element;
+}
+
 @mixin tn-inputwrap__icon() {
   @include tn-position-absolute-top-left;
 
-  width: $tn-icon-size;
-  height: $tn-icon-size;
+  width: $tn-standard-icon-size;
+  height: $tn-standard-icon-size;
   margin: $tn-spacing--standard-element-nonbordered;
   z-index: 1;
+}
+
+@mixin tn-inputwrap__icon--small() {
+  width: $tn-small-icon-size;
+  height: $tn-small-icon-size;
+  margin: $tn-spacing--small-element-nonbordered;
 }
 
 @mixin tn-inputwrap__icon--inactive() {
@@ -45,5 +60,12 @@
   @include tn-input;
   @include tn-position-absolute-top-left;
 
-  padding-left: $tn-icon-size + 2 * $tn-spacing--standard-element-nonbordered;
+  padding-left: $tn-standard-icon-size + 2 * $tn-spacing--standard-element-nonbordered;
 }
+
+@mixin tn-inputwrap__input--small() {
+  height: $tn-height--small-element;
+  padding-left: $tn-small-icon-size + 2 * $tn-spacing--small-element-nonbordered;
+  line-height: $tn-height--small-element;
+}
+

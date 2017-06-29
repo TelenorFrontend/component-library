@@ -6,15 +6,25 @@
  * @description
  *  Standard input styling for text/email/phone, etc
  * @modifiers
+ *  .tn-input--small modifier for smaller inputs
  *  .tn-input--invalid modifier for when input value is invalid
  * @markup
+ *  <h3>Input variations:</h3>
  *  <input class="tn-input" placeholder="Placeholder ...">
  *  <input class="tn-input" value="value">
  *  <input class="tn-input tn-input--invalid" value="invalid-value">
+ *  <h3>Input variations (--small):</h3>
+ *  <input class="tn-input tn-input--small" placeholder="Placeholder ...">
+ *  <input class="tn-input tn-input--small" value="value">
+ *  <input class="tn-input tn-input--small tn-input--invalid" value="invalid-value">
  */
 .tn-input {
   @include tn-border-box-everything;
   @include tn-input;
+
+  &--small {
+    @include tn-input--small;
+  }
 
   &--invalid {
     @include tn-input--invalid;
@@ -27,17 +37,35 @@
  * @description
  *  Standard input styling for text/email/phone, etc
  * @modifiers
- *  .tn-inputwrap--has-value modifier for when child input has value
+ *  .tn-inputwrap--small modifier for smaller inputs
+ *  .tn-inputwrap--has-value modifier for when child input has value (changes icon opacity from .5 to 1)
  * @markup
+ *  <h3>Icon-input variations:</h3>
  *  <div class="tn-inputwrap">
  *      <div class="tn-inputwrap__icon">
  *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
  *      </div>
  *      <input class="tn-inputwrap__input" placeholder="Placeholder ...">
  *  </div>
+ *  <br>
  *  <div class="tn-inputwrap tn-inputwrap--has-value">
  *      <div class="tn-inputwrap__icon">
  *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" value="value">
+ *  </div>
+ *  <br>
+ *  <h3>Icon-input variations (--small):</h3>
+ *  <div class="tn-inputwrap tn-inputwrap--small">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="16" height="16"><circle cx="8" cy="8" r="8" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" placeholder="Placeholder ...">
+ *  </div>
+ *  <br>
+ *  <div class="tn-inputwrap tn-inputwrap--small tn-inputwrap--has-value">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="16" height="16"><circle cx="8" cy="8" r="8" fill="#333"/></svg>
  *      </div>
  *      <input class="tn-inputwrap__input" value="value">
  *  </div>
@@ -58,6 +86,18 @@
   &--has-value {
     .tn-inputwrap__icon {
       @include tn-inputwrap__icon--active; // active if input has value
+    }
+  }
+
+  &--small {
+    @include tn-inputwrap--small;
+
+    .tn-inputwrap__icon {
+      @include tn-inputwrap__icon--small;
+    }
+
+    .tn-inputwrap__input {
+      @include tn-inputwrap__input--small;
     }
   }
 }

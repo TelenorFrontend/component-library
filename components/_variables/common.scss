@@ -17,10 +17,16 @@ $tn-color--white: #fff;
 $tn-color--default: #000;
 
 /*
- * @nuclide Icon size
+ * @nuclide Standard icon size
  * @section Common
  */
-$tn-icon-size: 24px;
+$tn-standard-icon-size: 24px;
+
+/*
+ * @nuclide Small icon size
+ * @section Common
+ */
+$tn-small-icon-size: 16px;
 
 /*
  * @nuclide Opacity normal
