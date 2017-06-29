@@ -1,15 +1,49 @@
+@import "../_variables/common";
 @import "../_variables/form-elements";
 @import "../_variables/typography";
 
+// Basic input
+
 @mixin tn-input() {
-  height: $tn-height--mobile-element;
-  padding: 0 $tn-spacing--mobile-element-bordered;
+  height: $tn-height--standard-element;
+  padding: 0 $tn-spacing--standard-element-bordered;
   border: 1px solid $tn-color--gray-border;
-  border-radius: $tn-border--mobile-element-border-radius;
+  border-radius: $tn-border--standard-element-border-radius;
   font: $tn-font--default;
 }
 
 @mixin tn-input--invalid() {
   border-color: $tn-color--red-invalid;
   color: $tn-color--red-invalid;
+}
+
+// Icon input
+
+@mixin tn-inputwrap() {
+  position: relative;
+  height: $tn-height--standard-element;
+}
+
+@mixin tn-inputwrap__icon() {
+  @include tn-position-absolute-top-left;
+
+  width: $tn-icon-size;
+  height: $tn-icon-size;
+  margin: $tn-spacing--standard-element-nonbordered;
+  z-index: 1;
+}
+
+@mixin tn-inputwrap__icon--inactive() {
+  opacity: $tn-opacity-inactive;
+}
+
+@mixin tn-inputwrap__icon--active() {
+  opacity: $tn-opacity-normal;
+}
+
+@mixin tn-inputwrap__input() {
+  @include tn-input;
+  @include tn-position-absolute-top-left;
+
+  padding-left: $tn-icon-size + 2 * $tn-spacing--standard-element-nonbordered;
 }

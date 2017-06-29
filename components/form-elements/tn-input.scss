@@ -13,9 +13,51 @@
  *  <input class="tn-input tn-input--invalid" value="invalid-value">
  */
 .tn-input {
+  @include tn-border-box-everything;
   @include tn-input;
 
   &--invalid {
     @include tn-input--invalid;
+  }
+}
+
+/**
+ * @molecule Input-field with icon
+ * @section Form elements
+ * @description
+ *  Standard input styling for text/email/phone, etc
+ * @modifiers
+ *  .tn-inputwrap--has-value modifier for when child input has value
+ * @markup
+ *  <div class="tn-inputwrap">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" placeholder="Placeholder ...">
+ *  </div>
+ *  <div class="tn-inputwrap tn-inputwrap--has-value">
+ *      <div class="tn-inputwrap__icon">
+ *          <svg width="24" height="24"><circle cx="12" cy="12" r="12" fill="#333"/></svg>
+ *      </div>
+ *      <input class="tn-inputwrap__input" value="value">
+ *  </div>
+ */
+.tn-inputwrap {
+  @include tn-border-box-everything;
+  @include tn-inputwrap;
+
+  &__icon {
+    @include tn-inputwrap__icon;
+    @include tn-inputwrap__icon--inactive; // inactive by default
+  }
+
+  &__input {
+    @include tn-inputwrap__input;
+  }
+
+  &--has-value {
+    .tn-inputwrap__icon {
+      @include tn-inputwrap__icon--active; // active if input has value
+    }
   }
 }

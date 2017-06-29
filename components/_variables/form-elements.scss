@@ -11,25 +11,25 @@ $tn-color--gray-border: #ddd;
 $tn-color--red-invalid: #d32f2f;
 
 /*
- * @nuclide Standard mobile-element height
- * @section Mobile
+ * @nuclide Standard-element height
+ * @section Common
  */
-$tn-height--mobile-element: 56px;
+$tn-height--standard-element: 56px;
 
 /*
- * @nuclide Mobile element padding
- * @section Mobile
+ * @nuclide standard-element spacing
+ * @section Common
  */
-$tn-spacing--mobile-element-bordered: 15px;
+$tn-spacing--standard-element-bordered: 15px;
 
 /*
- * @nuclide Mobile element (bordered) padding
- * @section Mobile
+ * @nuclide Standard-element (bordered) spacing
+ * @section Common
  */
-$tn-spacing--mobile-element-nonbordered: 16px;
+$tn-spacing--standard-element-nonbordered: 16px;
 
 /*
- * @nuclide Mobile element border radius
- * @section Mobile
+ * @nuclide Standard-element border radius
+ * @section Common
  */
-$tn-border--mobile-element-border-radius: 2px;
+$tn-border--standard-element-border-radius: 2px;

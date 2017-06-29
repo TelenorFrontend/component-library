@@ -3,14 +3,14 @@
 @import "../_variables/typography";
 
 @mixin tn-button() {
-  padding: 0 $tn-spacing--mobile-element-nonbordered;
+  padding: 0 $tn-spacing--standard-element-nonbordered;
   transition: opacity .2s ease-in-out;
   border: 0;
-  border-radius: $tn-border--mobile-element-border-radius;
+  border-radius: $tn-border--standard-element-border-radius;
   background: $tn-color--brand;
   color: $tn-color--white;
   font-size: $tn-font-size--large;
-  line-height: $tn-height--mobile-element;
+  line-height: $tn-height--standard-element;
   cursor: pointer;
 }
 

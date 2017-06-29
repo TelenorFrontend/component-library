@@ -17,6 +17,12 @@ $tn-color--white: #fff;
 $tn-color--default: #000;
 
 /*
+ * @nuclide Icon size
+ * @section Common
+ */
+$tn-icon-size: 24px;
+
+/*
  * @nuclide Opacity normal
  * @section Common
  */
@@ -27,6 +33,16 @@ $tn-opacity-normal: 1;
  * @section Common
  */
 $tn-opacity-inactive: .5;
+
+/*
+ * @mixin Absolute-top-left
+ * @section Common
+ */
+@mixin tn-position-absolute-top-left() {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 /*
  * @mixin Box-sizing: border-box (+ children)

@@ -9,23 +9,23 @@
 }
 
 @mixin tn-step() {
-  height: $tn-height--mobile-element;
-  padding: 0 $tn-height--mobile-element $tn-spacing--mobile-element-nonbordered 0;
+  height: $tn-height--standard-element;
+  padding: 0 $tn-height--standard-element $tn-spacing--standard-element-nonbordered 0;
   color: $tn-color--default;
   font-size: $tn-font-size--large;
-  line-height: $tn-height--mobile-element;
+  line-height: $tn-height--standard-element;
   opacity: $tn-opacity-inactive;
 
   &::before {
     display: inline-block;
     counter-increment: step;
-    width: $tn-height--mobile-element;
-    height: $tn-height--mobile-element;
-    margin-right: $tn-spacing--mobile-element-nonbordered;
+    width: $tn-height--standard-element;
+    height: $tn-height--standard-element;
+    margin-right: $tn-spacing--standard-element-nonbordered;
     border-radius: 50%;
     background-color: $tn-color--default;
     color: $tn-color--white;
-    line-height: $tn-height--mobile-element;
+    line-height: $tn-height--standard-element;
     text-align: center;
     content: counter(step);
   }
