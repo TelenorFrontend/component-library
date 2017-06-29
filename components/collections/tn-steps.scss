@@ -5,20 +5,34 @@
  * @section Collections
  * @description
  *  Overview of the steps of a process. The active element is marked by a BEM modifier.
+  * @modifiers
+ *  .tn-steps--small modifier for smaller steps
  * @markup
+ *  <h3>Steps variations:</h3>
  *  <ol class="tn-steps">
+ *   <li class="tn-step tn-step--active">Create Transaction</li>
+ *   <li class="tn-step">Payment</li>
+ *   <li class="tn-step">Verify Transaction</li>
+ *  </ol>
+ *  <h3>Steps variations (--small):</h3>
+ *  <ol class="tn-steps tn-steps--small">
  *   <li class="tn-step tn-step--active">Create Transaction</li>
  *   <li class="tn-step">Payment</li>
  *   <li class="tn-step">Verify Transaction</li>
  *  </ol>
  */
 .tn-steps {
-  @include tn-reset;
+  @include tn-list-reset;
   @include tn-steps;
+
+  &--small {
+    @include tn-steps--small;
+  }
 }
 
 .tn-step {
-  @include tn-reset;
+  @include tn-border-box-everything;
+  @include tn-list-reset;
   @include tn-step;
 
   &--active {

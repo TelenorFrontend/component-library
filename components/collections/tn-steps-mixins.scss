@@ -5,12 +5,30 @@
   counter-reset: step;
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
+  padding: $tn-spacing--standard-element-nonbordered 0 $tn-spacing--standard-element-nonbordered 0;
+}
+
+@mixin tn-steps--small() {
+  padding: $tn-spacing--small-element-nonbordered 0 $tn-spacing--small-element-nonbordered 0;
+
+  .tn-step {
+    height: $tn-height--small-element;
+    margin: 0 $tn-height--small-element $tn-spacing--small-element-nonbordered 0;
+    font-size: $tn-font-size--default;
+    line-height: $tn-font-size--default;
+
+    &::before {
+      width: $tn-height--small-element;
+      height: $tn-height--small-element;
+      margin-right: $tn-spacing--small-element-nonbordered;
+      line-height: $tn-height--small-element;
+    }
+  }
 }
 
 @mixin tn-step() {
   height: $tn-height--standard-element;
-  padding: 0 $tn-height--standard-element $tn-spacing--standard-element-nonbordered 0;
+  margin: 0 $tn-height--standard-element $tn-spacing--standard-element-nonbordered 0;
   color: $tn-color--default;
   font-size: $tn-font-size--large;
   line-height: $tn-height--standard-element;

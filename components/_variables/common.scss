@@ -14,7 +14,7 @@ $tn-color--white: #fff;
  * @color Default font color
  * @section Colors
  */
-$tn-color--default: #000;
+$tn-color--default: rgba(0, 0, 0, .87);
 
 /*
  * @nuclide Standard icon size
@@ -66,7 +66,7 @@ $tn-opacity-inactive: .5;
  * @mixin Reset browser styles
  * @section Common
  */
-@mixin tn-reset() {
+@mixin tn-list-reset() {
   margin: 0;
   padding: 0;
   list-style: none;
