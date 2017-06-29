@@ -1,0 +1,41 @@
+@import "../_variables/common";
+@import "../_variables/typography";
+
+@mixin tn-steps() {
+  counter-reset: step;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+@mixin tn-step() {
+  height: $tn-height--mobile-element;
+  padding: 0 $tn-height--mobile-element $tn-spacing--mobile-element-nonbordered 0;
+  color: $tn-color--default;
+  font-size: $tn-font-size--large;
+  line-height: $tn-height--mobile-element;
+  opacity: $tn-opacity-inactive;
+
+  &::before {
+    display: inline-block;
+    counter-increment: step;
+    width: $tn-height--mobile-element;
+    height: $tn-height--mobile-element;
+    margin-right: $tn-spacing--mobile-element-nonbordered;
+    border-radius: 50%;
+    background-color: $tn-color--default;
+    color: $tn-color--white;
+    line-height: $tn-height--mobile-element;
+    text-align: center;
+    content: counter(step);
+  }
+}
+
+@mixin tn-step--active() {
+  color: $tn-color--default;
+  opacity: $tn-opacity-normal;
+
+  &::before {
+    background-color: $tn-color--brand;
+  }
+}

@@ -1,0 +1,27 @@
+@import "tn-steps-mixins";
+
+/**
+ * @molecule Steps
+ * @section Collections
+ * @description
+ *  Overview of the steps of a process. The active element is marked by a BEM modifier.
+ * @markup
+ *  <ol class="tn-steps">
+ *   <li class="tn-step tn-step--active">Create Transaction</li>
+ *   <li class="tn-step">Payment</li>
+ *   <li class="tn-step">Verify Transaction</li>
+ *  </ol>
+ */
+.tn-steps {
+  @include tn-reset;
+  @include tn-steps;
+}
+
+.tn-step {
+  @include tn-reset;
+  @include tn-step;
+
+  &--active {
+    @include tn-step--active;
+  }
+}

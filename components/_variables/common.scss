@@ -11,6 +11,12 @@ $tn-color--brand: #007ace;
 $tn-color--white: #fff;
 
 /*
+ * @color Default font color
+ * @section Colors
+ */
+$tn-color--default: #000;
+
+/*
  * @nuclide Opacity normal
  * @section Common
  */
@@ -32,4 +38,14 @@ $tn-opacity-inactive: .5;
   > * {
     box-sizing: border-box;
   }
+}
+
+/*
+ * @mixin Reset browser styles
+ * @section Common
+ */
+@mixin tn-reset() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
