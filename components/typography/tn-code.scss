@@ -1,0 +1,13 @@
+@import "tn-code-mixins";
+
+/**
+ * Light gray encapsulation with monospaced font used to display code
+ *
+ * @atom Basic inline code
+ * @section Typography
+ * @markup
+ *  <code class="tn-code">Example code</code>
+ */
+.tn-code {
+  @include tn-code;
+}
