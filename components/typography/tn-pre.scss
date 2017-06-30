@@ -1,0 +1,15 @@
+@import "tn-pre-mixins";
+
+/**
+ * Light gray block with monospaced font used to display code
+ *
+ * @atom Basic code block
+ * @section Typography
+ * @markup
+ *  <pre class="tn-pre"><code>Example code</code></pre>
+ */
+.tn-pre {
+  @include tn-border-box-everything;
+  @include tn-code;
+  @include tn-pre;
+}

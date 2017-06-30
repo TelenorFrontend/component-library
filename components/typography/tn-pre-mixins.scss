@@ -1,0 +1,5 @@
+@import "../_variables/form-elements";
+
+@mixin tn-pre() {
+  padding: $tn-spacing--small-element-nonbordered;
+}
