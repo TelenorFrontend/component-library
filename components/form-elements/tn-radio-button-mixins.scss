@@ -44,6 +44,6 @@ $tn-radio-base-size: $tn-standard-icon-size - 2 * $tn-radio-border-width;
 
 @keyframes shrink-inset-shadow {
   to {
-    box-shadow: inset 0 0 0 3px #fff;
+    box-shadow: inset 0 0 0 3px $tn-color--white;
   }
 }
