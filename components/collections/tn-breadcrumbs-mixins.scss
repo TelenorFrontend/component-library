@@ -1,0 +1,12 @@
+@import "../_variables/common";
+@import "../_variables/collections";
+
+@mixin tn-breadcrumb() {
+  display: inline-block;
+
+  &:not(:first-child)::before {
+    padding: 0 $tn-collections-spacing--standard-element;
+    color: $tn-color--default;
+    content: "/";
+  }
+}
