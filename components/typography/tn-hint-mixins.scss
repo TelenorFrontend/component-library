@@ -9,5 +9,5 @@
 }
 
 @mixin tn-hint--brand() {
-  border-left: 2px solid $tn-color--brand;
+  border-color: $tn-color--brand;
 }

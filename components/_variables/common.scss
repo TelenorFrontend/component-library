@@ -63,10 +63,10 @@ $tn-opacity-inactive: .5;
 }
 
 /*
- * @mixin Generic browser style reset
+ * @mixin Generic browser style spacing reset
  * @section Common
  */
-@mixin tn-reset() {
+@mixin tn-reset-spacing() {
   margin: 0;
   padding: 0;
 }
