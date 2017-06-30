@@ -1,5 +1,6 @@
 @import "../_variables/typography";
 @import "../_variables/common";
+@import "../_variables/form-elements";
 
 @mixin tn-hint() {
   padding: $tn-spacing--standard-element-nonbordered;
