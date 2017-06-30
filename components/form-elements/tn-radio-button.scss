@@ -1,0 +1,36 @@
+@import "tn-radio-button-mixins";
+
+/**
+ * @molecule Standard radio-button
+ * @section Form elements
+ * @description
+ *  Standard styling for radio-buttons
+ * @markup
+ *  <label class="tn-radiowrap">
+ *    <input class="tn-radiowrap__radio" type="radio" name="x" checked>
+ *    <span class="tn-radiowrap__text">Text</span>
+ *  </label>
+ *  <label class="tn-radiowrap">
+ *    <input class="tn-radiowrap__radio" type="radio" name="x">
+ *    <span class="tn-radiowrap__text">Text</span>
+ *  </label>
+ */
+.tn-radiowrap {
+  @include tn-radiowrap;
+
+  &__radio {
+    @include tn-radiowrap__radio;
+  }
+
+  &__text {
+    @include tn-radiowrap__text;
+  }
+
+  &__radio + &__text::before {
+    @include tn-radiowrap__pseudo-radio;
+  }
+
+  &__radio:checked + &__text::before {
+    @include tn-radiowrap__pseudo-radio--checked;
+  }
+}
