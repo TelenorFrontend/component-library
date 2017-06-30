@@ -41,6 +41,12 @@ $tn-opacity-normal: 1;
 $tn-opacity-inactive: .5;
 
 /*
+ * @nuclide Animation speed (quick)
+ * @section Common
+ */
+$tn-animation-speed--quick: 200ms;
+
+/*
  * @mixin Absolute-top-left
  * @section Common
  */
