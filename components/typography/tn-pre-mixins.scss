@@ -1,5 +1,8 @@
 @import "../_variables/form-elements";
+@import "../_variables/typography";
 
 @mixin tn-pre() {
   padding: $tn-spacing--small-element-nonbordered;
+  background-color: $tn-color--light-gray-background;
+  font-family: monospace;
 }

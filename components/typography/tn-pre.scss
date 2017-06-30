@@ -10,6 +10,5 @@
  */
 .tn-pre {
   @include tn-border-box-everything;
-  @include tn-code;
   @include tn-pre;
 }
