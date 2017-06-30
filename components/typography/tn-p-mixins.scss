@@ -1,0 +1,5 @@
+@import "../_variables/typography";
+
+@mixin tn-p() {
+  line-height: $tn-line-height--default;
+}

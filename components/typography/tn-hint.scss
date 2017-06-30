@@ -1,0 +1,24 @@
+@import "tn-hint-mixins";
+@import "../_variables/common";
+
+/**
+ * Light gray block with an accent for a highlighted paragraph. Best used in tandem with a generic paragraph class.
+ *
+ * @atom Hint
+ * @section Typography
+ * @modifiers
+ *  .tn-hint--brand modifier for brand color accent
+ * @markup
+ *  <h3>Hint variations:</h3>
+ *  <div class="tn-p tn-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</div>
+ *  <h3>Hint variations (--brand):</h3>
+ *  <div class="tn-p tn-hint tn-hint--brand">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</div>
+ */
+.tn-hint {
+  @include tn-border-box-everything;
+  @include tn-hint;
+
+  &--brand {
+    @include tn-hint--brand;
+  }
+}

@@ -1,0 +1,12 @@
+@import "../_variables/typography";
+@import "../_variables/common";
+
+@mixin tn-hint() {
+  padding: $tn-spacing--standard-element-nonbordered;
+  border-left: 2px solid $tn-color--gray;
+  background: $tn-color--light-gray-background;
+}
+
+@mixin tn-hint--brand() {
+  border-left: 2px solid $tn-color--brand;
+}
