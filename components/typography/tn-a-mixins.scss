@@ -1,0 +1,12 @@
+@import "../_variables/common";
+
+@mixin tn-a() {
+  color: $tn-color--brand;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    text-decoration: underline;
+  }
+}

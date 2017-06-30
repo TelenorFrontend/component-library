@@ -1,0 +1,15 @@
+@import "tn-a-mixins";
+
+/**
+ * @atom Basic link
+ * @section Typography
+ * @description
+ *  Standard link styling
+ * @markup
+ *  <a href="#" class="tn-a">This is a link</a>
+ */
+.tn-a,
+.tn-a:link,
+.tn-a:visited {
+  @include tn-a;
+}
