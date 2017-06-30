@@ -1,3 +1,4 @@
+@import "../_variables/common";
 @import "../_variables/typography";
 
 /*
@@ -7,4 +8,8 @@
 @mixin tn-code() {
   background-color: $tn-color--light-gray-background;
   font-family: monospace;
+}
+
+@mixin tn-codeblock() {
+  padding: $tn-spacing--small-element-nonbordered;
 }

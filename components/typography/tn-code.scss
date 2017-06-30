@@ -11,3 +11,17 @@
 .tn-code {
   @include tn-code;
 }
+
+/**
+ * Light gray block with monospaced font used to display code
+ *
+ * @atom Basic code block
+ * @section Typography
+ * @markup
+ *  <pre class="tn-codeblock"><code>Example code</code></pre>
+ */
+.tn-codeblock {
+  @include tn-border-box-everything;
+  @include tn-code;
+  @include tn-codeblock;
+}
