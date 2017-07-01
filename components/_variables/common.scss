@@ -92,3 +92,13 @@ $tn-animation-speed--quick: 150ms;
   padding: 0;
   list-style: none;
 }
+
+/*
+ * @mixin Make element unselectable in modern browsers (+ older chrome/safari)
+ * @section Common
+ */
+@mixin tn-interaction--unseletable() {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

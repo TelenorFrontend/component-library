@@ -16,6 +16,7 @@
  *  </label>
  */
 .tn-toggle {
+  @include tn-interaction--unseletable;
   @include tn-toggle;
 
   &__checkbox {

@@ -16,6 +16,7 @@
  *  </label>
  */
 .tn-radiowrap {
+  @include tn-interaction--unseletable;
   @include tn-radiowrap;
 
   &__radio {

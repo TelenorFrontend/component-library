@@ -16,6 +16,7 @@
  *  </label>
  */
 .tn-checkboxwrap {
+  @include tn-interaction--unseletable;
   @include tn-checkboxwrap;
 
   &__checkbox {

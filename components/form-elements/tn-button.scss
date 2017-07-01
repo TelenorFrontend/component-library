@@ -17,6 +17,7 @@
  *  <button class="tn-button tn-button--small tn-button--disabled">Small disabled button</button>
  */
 .tn-button {
+  @include tn-interaction--unseletable;
   @include tn-border-box-everything;
   @include tn-button;
 
