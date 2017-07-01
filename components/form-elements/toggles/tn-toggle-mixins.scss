@@ -1,0 +1,59 @@
+@import "../../_variables/common";
+@import "../../_variables/form-elements";
+@import "../../_variables/typography";
+
+$tn-toggle-dot-size: 20px;
+$tn-toggle-slide-height: 14px;
+$tn-toggle-slide-width: 36px;
+
+@mixin tn-toggle() {
+  @include tn-border-box-everything;
+
+  display: inline-block;
+  position: relative;
+  height: $tn-toggle-dot-size;
+}
+
+@mixin tn-toggle__checkbox {
+  display: none;
+}
+
+@mixin tn-toggle__text {
+  padding-right: 5px;
+  padding-left: $tn-toggle-slide-width + 5px;
+  font-size: $tn-font-size--default;
+}
+
+@mixin tn-toggle__line() {
+  @include tn-position-absolute-top-left;
+  @include tn-border-box-everything;
+
+  width: $tn-toggle-slide-width;
+  height: $tn-toggle-slide-height;
+  margin: ($tn-toggle-dot-size - $tn-toggle-slide-height)/2 0;
+  border-radius: $tn-toggle-slide-height/2;
+  background: #bbb;
+  content: "";
+}
+
+@mixin tn-toggle__dot() {
+  @include tn-position-absolute-top-left;
+  @include tn-border-box-everything;
+
+  width: $tn-toggle-dot-size;
+  height: $tn-toggle-dot-size;
+  transition: left $tn-animation-speed--quick ease;
+  border-radius: $tn-toggle-dot-size/2;
+  background: $tn-color--white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, .5);
+  content: "";
+}
+
+@mixin tn-toggle__line--checked() {
+  background: $tn-color--brand-muted;
+}
+
+@mixin tn-toggle__dot--checked() {
+  left: $tn-toggle-slide-width - $tn-toggle-dot-size;
+  background: $tn-color--brand;
+}

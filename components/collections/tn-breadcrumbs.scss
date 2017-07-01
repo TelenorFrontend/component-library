@@ -1,0 +1,23 @@
+@import "tn-breadcrumbs-mixins";
+@import "../_variables/common";
+
+/**
+ * Breadcrumbs to indicate the user's current position in a hierarchical structure
+ *
+ * @molecule Breadcrumbs
+ * @section Collections
+ * @markup
+ *  <ol class="tn-breadcrumbs">
+ *   <li class="tn-breadcrumb"><a href="#" class="tn-a">Home</a></li>
+ *   <li class="tn-breadcrumb"><a href="#" class="tn-a">Somewhere</a></li>
+ *   <li class="tn-breadcrumb">Current page</li>
+ *  </ol>
+ */
+.tn-breadcrumbs {
+  @include tn-list-reset;
+
+  .tn-breadcrumb {
+    @include tn-border-box-everything;
+    @include tn-breadcrumb;
+  }
+}

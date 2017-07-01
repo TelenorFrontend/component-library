@@ -1,0 +1,44 @@
+@import "tn-toggle-mixins";
+
+/**
+ * @molecule Toggle checkbox
+ * @section Form elements > Toggles
+ * @description
+ *  Toggle styling for checkbox
+ * @markup
+ *  <label class="tn-toggle">
+ *    <input class="tn-toggle__checkbox" type="checkbox">
+ *    <span class="tn-toggle__text">Text</span>
+ *  </label>
+ *  <label class="tn-toggle">
+ *    <input class="tn-toggle__checkbox" type="checkbox" checked>
+ *    <span class="tn-toggle__text">Text</span>
+ *  </label>
+ */
+.tn-toggle {
+  @include tn-toggle;
+
+  &__checkbox {
+    @include tn-toggle__checkbox;
+  }
+
+  &__text {
+    @include tn-toggle__text;
+  }
+
+  &__checkbox + &__text::before {
+    @include tn-toggle__line;
+  }
+
+  &__checkbox + &__text::after {
+    @include tn-toggle__dot;
+  }
+
+  &__checkbox:checked + &__text::before {
+    @include tn-toggle__line--checked;
+  }
+
+  &__checkbox:checked + &__text::after {
+    @include tn-toggle__dot--checked;
+  }
+}

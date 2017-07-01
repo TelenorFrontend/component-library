@@ -5,6 +5,12 @@
 $tn-color--brand: #007ace;
 
 /*
+ * @color Muted brand color (50% opacity)
+ * @section Colors
+ */
+$tn-color--brand-muted: rgba(0, 122, 206, .5); // #007ace, 50% opacity
+
+/*
  * @color Base white
  * @section Colors
  */
@@ -44,7 +50,7 @@ $tn-opacity-inactive: .5;
  * @nuclide Animation speed (quick)
  * @section Common
  */
-$tn-animation-speed--quick: 200ms;
+$tn-animation-speed--quick: 150ms;
 
 /*
  * @mixin Absolute-top-left

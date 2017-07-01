@@ -1,0 +1,40 @@
+@import "tn-checkbox-mixins";
+
+/**
+ * @molecule Standard checkbox
+ * @section Form elements > Toggles
+ * @description
+ *  Standard styling for checkboxes
+ * @markup
+ *  <label class="tn-checkboxwrap">
+ *    <input class="tn-checkboxwrap__checkbox" type="checkbox">
+ *    <span class="tn-checkboxwrap__text">Text</span>
+ *  </label>
+ *  <label class="tn-checkboxwrap">
+ *    <input class="tn-checkboxwrap__checkbox" type="checkbox" checked>
+ *    <span class="tn-checkboxwrap__text">Text</span>
+ *  </label>
+ */
+.tn-checkboxwrap {
+  @include tn-checkboxwrap;
+
+  &__checkbox {
+    @include tn-checkboxwrap__checkbox;
+  }
+
+  &__text {
+    @include tn-checkboxwrap__text;
+  }
+
+  &__checkbox + &__text::before {
+    @include tn-checkboxwrap__pseudo-checkbox;
+  }
+
+  &__checkbox:checked + &__text::before {
+    @include tn-checkboxwrap__pseudo-checkbox--checked-bg;
+  }
+
+  &__checkbox:checked + &__text::after {
+    @include tn-checkboxwrap__pseudo-checkbox--checked-fg;
+  }
+}

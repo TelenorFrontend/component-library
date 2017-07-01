@@ -2,16 +2,16 @@
 
 /**
  * @molecule Standard radio-button
- * @section Form elements
+ * @section Form elements > Toggles
  * @description
  *  Standard styling for radio-buttons
  * @markup
  *  <label class="tn-radiowrap">
- *    <input class="tn-radiowrap__radio" type="radio" name="x" checked>
+ *    <input class="tn-radiowrap__radio" type="radio" name="x">
  *    <span class="tn-radiowrap__text">Text</span>
  *  </label>
  *  <label class="tn-radiowrap">
- *    <input class="tn-radiowrap__radio" type="radio" name="x">
+ *    <input class="tn-radiowrap__radio" type="radio" name="x" checked>
  *    <span class="tn-radiowrap__text">Text</span>
  *  </label>
  */
