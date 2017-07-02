@@ -99,6 +99,5 @@ $tn-animation-speed--quick: 150ms;
  */
 @mixin tn-interaction--unseletable() {
   -webkit-touch-callout: none;
-  -webkit-user-select: none;
   user-select: none;
 }
