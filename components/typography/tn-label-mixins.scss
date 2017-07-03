@@ -1,0 +1,11 @@
+@import "../_variables/common";
+@import "../_variables/sizes";
+@import "../_variables/typography";
+
+@mixin tn-label() {
+  display: inline-block;
+  padding: $tn-typography-padding-inline-block;
+  border: 1px solid $tn-color--gray-border;
+  border-radius: $tn-border--standard-element-border-radius;
+  background-color: $tn-color--light-gray-background;
+}

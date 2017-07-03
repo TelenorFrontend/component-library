@@ -1,0 +1,15 @@
+@import "tn-label-mixins";
+
+/**
+ * Generic label style that can be used for tags or to draw attention.
+ *
+ * @atom Basic Label
+ * @section Typography
+ * @markup
+ *  The server responded with a <span class="tn-label">200 OK</span> response message.</br>
+ *  Tags: <span class="tn-label">HTTP</span> <span class="tn-label">Response</span>
+ */
+.tn-label {
+  @include tn-border-box-everything;
+  @include tn-label;
+}
