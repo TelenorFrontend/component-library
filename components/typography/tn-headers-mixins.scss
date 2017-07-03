@@ -1,0 +1,15 @@
+@import "../_variables/common";
+@import "../_variables/sizes";
+@import "../_variables/typography";
+
+@mixin tn-header($font-size) {
+  margin-top: $tn-spacing-header--top;
+  margin-bottom: $tn-spacing-header--bottom;
+  font-size: $font-size;
+  font-weight: 300;
+  line-height: $tn-line-height--header;
+}
+
+@mixin tn-header--border() {
+  border-bottom: 1px solid $tn-color--gray-border;
+}

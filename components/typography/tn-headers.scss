@@ -1,0 +1,47 @@
+@import "tn-headers-mixins";
+@import "../_variables/typography";
+
+/**
+ * Header styles can be applied to p tags or h1, h2,... tags.
+ *
+ * @atom Headers
+ * @section Typography
+ * @markup
+ *  <p class="tn-h1">Header &#x3C;p class="tn-h1"&#x3E;...&#x3C;/p&#x3E</p>
+ *  <h2 class="tn-h2">Header &#x3C;h2 class="tn-h2"&#x3E;...&#x3C;/h2&#x3E</h2>
+ *  <p class="tn-h3">Header .tn-h3</p>
+ *  <p class="tn-h4">Header .tn-h4</p>
+ *  <p class="tn-h5">Header .tn-h5</p>
+ *  <p class="tn-h6">Header .tn-h6</p>
+ */
+.tn-h1 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--largest);
+}
+
+.tn-h2 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--large);
+  @include tn-header--border;
+}
+
+.tn-h3 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--medium);
+}
+
+.tn-h4 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--small);
+  @include tn-header--border;
+}
+
+.tn-h5 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--smaller);
+}
+
+.tn-h6 {
+  @include tn-reset-spacing;
+  @include tn-header($tn-font-size-header--smallest);
+}
