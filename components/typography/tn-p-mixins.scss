@@ -1,5 +1,9 @@
 @import "../_variables/typography";
+@import "../_variables/sizes";
 
 @mixin tn-p() {
-  line-height: $tn-line-height--docs;
+  margin: $tn-spacing--standard-element-nonbordered 0;
+  color: $tn-color--default;
+  font: $tn-font--default;
+  line-height: $tn-line-height--default;
 }

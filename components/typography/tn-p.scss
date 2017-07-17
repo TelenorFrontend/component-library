@@ -1,5 +1,4 @@
 @import "tn-p-mixins";
-@import "../_variables/common";
 
 /**
  * Generic paragraph
@@ -10,6 +9,5 @@
  *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
  */
 .tn-p {
-  @include tn-reset-spacing;
   @include tn-p;
 }
