@@ -1,0 +1,33 @@
+@import "tn-headings-mixins";
+@import "../_variables/typography";
+
+/**
+ * Heading styles can be applied to p tags or h1, h2,... tags.
+ *
+ * @atom Headings
+ * @section Typography
+ * @markup
+ *  <p class="tn-h1">Heading .tn-h1</p>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <h2 class="tn-h2">Heading .tn-h2</h2>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <p class="tn-h3">Heading .tn-h3</p>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ *  <p class="tn-h4">Heading .tn-h4</p>
+ *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
+ */
+.tn-h1 {
+  @include tn-heading($tn-font-size--h1);
+}
+
+.tn-h2 {
+  @include tn-heading($tn-font-size--h2);
+}
+
+.tn-h3 {
+  @include tn-heading($tn-font-size--h3);
+}
+
+.tn-h4 {
+  @include tn-heading($tn-font-size--h4);
+}

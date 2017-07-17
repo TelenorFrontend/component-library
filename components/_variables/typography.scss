@@ -17,52 +17,40 @@ $tn-font-size--default: 16px;
 $tn-font-size--large: 18px;
 
 /*
- * @nuclide Header margin top
+ * @nuclide Heading margin top
  * @section Fonts
  */
-$tn-spacing-header--top: 20px;
+$tn-spacing-header--top: 48px;
 
 /*
- * @nuclide Header margin bottom
+ * @nuclide Heading margin bottom
  * @section Fonts
  */
-$tn-spacing-header--bottom: 10px;
+$tn-spacing-header--bottom: 12px;
 
 /*
- * @nuclide Header 1 size
+ * @nuclide Heading 1 size
  * @section Fonts
  */
-$tn-font-size-header--largest: 36px;
+$tn-font-size--h1: 34px;
 
 /*
- * @nuclide Header 2 size
+ * @nuclide Heading 2 size
  * @section Fonts
  */
-$tn-font-size-header--large: 30px;
+$tn-font-size--h2: 24px;
 
 /*
- * @nuclide Header 3 size
+ * @nuclide Heading 3 size
  * @section Fonts
  */
-$tn-font-size-header--medium: 26px;
+$tn-font-size--h3: 20px;
 
 /*
- * @nuclide Header 4 size
+ * @nuclide Heading 4 size
  * @section Fonts
  */
-$tn-font-size-header--small: 20px;
-
-/*
- * @nuclide Header 5 size
- * @section Fonts
- */
-$tn-font-size-header--smaller: 16px;
-
-/*
- * @nuclide Header 6 size
- * @section Fonts
- */
-$tn-font-size-header--smallest: 12px;
+$tn-font-size--h4: 16px;
 
 /*
  * @nuclide Default header line-height
