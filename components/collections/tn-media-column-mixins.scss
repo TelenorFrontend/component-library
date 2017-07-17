@@ -1,0 +1,9 @@
+@import "../_variables/sizes";
+
+@mixin tn-media-column() {
+  display: flex;
+
+  .tn-media + .tn-media {
+    margin-left: $tn-spacing--standard-element-nonbordered;
+  }
+}

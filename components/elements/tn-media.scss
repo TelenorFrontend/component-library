@@ -1,0 +1,45 @@
+@import "tn-media-mixins";
+@import "../typography/tn-p-mixins";
+
+/**
+ * @molecule Media
+ * @section Elements
+ * @description
+ *  A media element that comprises several diferent child classes. Examples can be found in the media column structure.
+ * @markup
+ *  <div class="SG-toc">
+ *  <ul>
+ *   <li><strong>tn-media:</strong> main class
+ *     <ul>
+ *       <li><strong>tn-media__heading:</strong> media heading. Best used alongside a heading class like tn-h2.</li>
+ *       <li><strong>tn-media__image:</strong> an image that spans the width of the media element and retains its aspect ratio.</li>
+ *       <li><strong>tn-media__caption:</strong> centered text. </li>
+ *       <li><strong>tn-media__content:</strong> genral-purpose container for any other element.</li>
+ *      </ul>
+ *   </li>
+ *  </ul>
+ *  </div>
+ *  <div class="tn-media">
+ *    <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
+ *    <p class="tn-media__caption">The tn-media element fills the parent containers width and scales in height to fit its content.</p>
+ *  </div>
+ */
+.tn-media {
+  @include tn-media;
+
+  &__heading {
+    @include tn-media__heading;
+  }
+
+  &__image {
+    @include tn-media__image;
+  }
+
+  &__caption {
+    @include tn-media__caption;
+  }
+
+  &__content {
+    @include tn-media__content;
+  }
+}

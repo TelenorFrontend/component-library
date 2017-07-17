@@ -1,0 +1,26 @@
+@import "../_variables/sizes";
+
+@mixin tn-media {
+  width: 100%;
+}
+
+@mixin tn-media__heading {
+  margin: $tn-spacing--standard-element-nonbordered 0;
+}
+
+@mixin tn-media__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@mixin tn-media__caption {
+  display: block;
+  width: 100%;
+  margin: $tn-spacing--standard-element-nonbordered 0;
+  text-align: center;
+}
+
+@mixin tn-media__content {
+  width: 100%;
+}
