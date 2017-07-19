@@ -1,5 +1,4 @@
 @import "tn-media-mixins";
-@import "../typography/tn-p-mixins";
 
 /**
  * @molecule Media
@@ -11,9 +10,9 @@
  *  <ul>
  *   <li><strong>tn-media:</strong> main class
  *     <ul>
- *       <li><strong>tn-media__heading:</strong> media heading. Best used alongside a heading class like tn-h2.</li>
+ *       <li><strong>tn-media__heading:</strong> media heading.</li>
  *       <li><strong>tn-media__image:</strong> an image that spans the width of the media element and retains its aspect ratio.</li>
- *       <li><strong>tn-media__caption:</strong> centered text. </li>
+ *       <li><strong>tn-media__caption:</strong> centered text.</li>
  *       <li><strong>tn-media__content:</strong> genral-purpose container for any other element.</li>
  *      </ul>
  *   </li>
