@@ -3,9 +3,9 @@
 @import "../_variables/typography";
 
 @mixin tn-heading($font-size) {
-  margin-top: $tn-spacing-header--top;
-  margin-bottom: $tn-spacing-header--bottom;
+  margin-top: $tn-spacing-heading--top;
+  margin-bottom: $tn-spacing-heading--bottom;
   font-size: $font-size;
   font-weight: normal;
-  line-height: $tn-line-height--header;
+  line-height: $tn-line-height--heading;
 }
