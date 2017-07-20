@@ -6,7 +6,7 @@
  * @description
  *  A column of evenly sized media elements.
  * @markup
- *  <p class="tn-h2">Two images with captions</p>
+ *  <h2 class="tn-h2">Two images with captions</h2>
  *  <div class="tn-media-column">
  *    <div class="tn-media">
  *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
@@ -17,17 +17,17 @@
  *      <p class="tn-media__caption">Placeholder image.</p>
  *    </div>
  *  </div>
- *  <p class="tn-h2">Image and text</p>
+ *  <h2 class="tn-h2">Image and text</h2>
  *  <div class="tn-media-column">
  *    <div class="tn-media">
- *      <p class="tn-media__heading">Lorem ipsum</p>
+ *      <h3 class="tn-media__heading">Lorem ipsum</h3>
  *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan. Nunc gravida commodo tortor, id interdum est interdum viverra. Nulla in vehicula nunc. Cras ac eros id nibh laoreet congue. Cras et varius mauris. Nulla ex enim, dapibus nec tempor sed, eleifend et sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p></div>
  *    </div>
  *    <div class="tn-media">
  *      <img class="tn-media__image" src="//placehold.it/1024x1024" alt="tn-media__image" />
  *    </div>
  *  </div>
- *  <p class="tn-h2">Variety column</p>
+ *  <h2 class="tn-h2">Variety column</h2>
  *  <div class="tn-media-column">
  *    <div class="tn-media">
  *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
@@ -37,7 +37,7 @@
  *      <p class="tn-media__caption">Media caption.</p>
  *    </div>
  *    <div class="tn-media">
- *      <p class="tn-media__heading">Lorem ipsum</p>
+ *      <h3 class="tn-media__heading">Lorem ipsum</p>
  *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan.</p></div>
  *    </div>
  *    <div class="tn-media">
@@ -46,7 +46,7 @@
  *    </div>
  *    <div class="tn-media">
  *      <img class="tn-media__image" src="//placehold.it/1280x720" alt="tn-media__image" />
- *      <p class="tn-media__heading">Lorem ipsum</p>
+ *      <h3 class="tn-media__heading">Lorem ipsum</h3>
  *      <div class="tn-media__content"><p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pretium tristique ex. Nam eget arcu sit amet nisi porttitor accumsan. </p></div>
  *    </div>
  *  </div>
