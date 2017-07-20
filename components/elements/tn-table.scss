@@ -1,0 +1,151 @@
+@import "tn-table-mixins";
+
+/**
+ * @molecule Table
+ * @section Elements
+ * @description
+ *  A basic table.
+ * @modifiers
+ *  .tn-table--bordered modifier for a table with a surrounding border
+ *  .tn-table--separators modifier for borders between each column
+ *  .tn-table--accented modifier to accent the table header
+ *  .tn-table--accented--brand modifier to accent the table header with the brand color
+ *  .tn-table__cell--centered modifier to align text in the center of a cell (td or th)
+ * @markup
+ *  <h3>Selected mobile Technologies</h3>
+ *  <table class="tn-table">
+ *    <thead class="tn-thead">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Generation</th class="tn-th">
+ *        <th class="tn-th">Technology</th class="tn-th">
+ *      </tr class="tn-tr">
+ *    </thead>
+ *    <tbody class="tn-tbody">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">1G</td class="tn-td">
+ *        <td class="tn-td">NMT</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">2G</td class="tn-td">
+ *        <td class="tn-td">GSM</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">2G transitional</td class="tn-td">
+ *        <td class="tn-td">GPRS, EDGE</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">3G</td class="tn-td">
+ *        <td class="tn-td">UMTS</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">3G transitional</td class="tn-td">
+ *        <td class="tn-td">HSPA, HSPA+, LTE</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <td class="tn-td">4G</td class="tn-td">
+ *        <td class="tn-td">LTE Advanced</td class="tn-td">
+ *      </tr class="tn-tr">
+ *    </tbody class="tn-tbody">
+ *  </table>
+ *  <h3>Payment methods (--bordered --separators --accented--brand)</h3>
+ *  <table class="tn-table tn-table--bordered tn-table--separators tn-table--accented--brand">
+ *    <thead class="tn-thead">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th" rowspan="2">Country</th class="tn-th">
+ *        <th class="tn-th tn-table__cell--centered" colspan="2">GLOBAL SOLUTIONS</th class="tn-th">
+ *        <th class="tn-th tn-table__cell--centered" colspan="3">MOBILE WALLETS</th class="tn-th">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">DOB</th class="tn-th">
+ *        <th class="tn-th">Cards</th class="tn-th">
+ *        <th class="tn-th">Vipps</th class="tn-th">
+ *        <th class="tn-th">Easypaysia</th class="tn-th">
+ *        <th class="tn-th">MyClear</th class="tn-th">
+ *      </tr class="tn-tr">
+ *    </th class="tn-th"ead class="tn-th class="tn-th"ead">
+ *    <tbody class="tn-tbody">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Bangladesh</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Malaysia</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Norway</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *      </tr class="tn-tr">
+ *      <tr class="tn-tr">
+ *        <th class="tn-th">Thailand</th class="tn-th">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered"></td class="tn-td">
+ *        <td class="tn-td tn-table__cell--centered">&#x2713;</td class="tn-td">
+ *      </tr class="tn-tr">
+ *    </tbody class="tn-tbody">
+ *  </table>
+ */
+.tn-table {
+  @include tn-table;
+
+  .tn-th {
+    @include tn-th;
+    @include tn-table__cell;
+  }
+
+  .tn-td {
+    @include tn-table__cell;
+  }
+
+  .tn-thead .tn-table__cell--centered,
+  .tn-tbody .tn-table__cell--centered {
+    @include tn-table__cell--centered;
+  }
+
+  &--separators {
+    .tn-th,
+    .tn-td {
+      @include tn-table__cell--separators;
+    }
+
+    .tn-tr > .tn-th:last-child,
+    .tn-tr > .tn-td:last-child {
+      @include tn-table__cell--no-border-right;
+    }
+  }
+
+  &--bordered {
+    @include tn-table--bordered;
+  }
+
+  &--accented {
+    .tn-thead .tn-tr {
+      @include tn-table__row--accented;
+    }
+  }
+
+  &--accented--brand {
+    .tn-thead .tn-tr {
+      @include tn-table__row--accented--brand;
+    }
+  }
+}
+
+.tn-tbody .tn-tr:last-child > .tn-th,
+.tn-tbody .tn-tr:last-child > .tn-td {
+  @include tn-table__cell--no-border-bottom;
+}

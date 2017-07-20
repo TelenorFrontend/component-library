@@ -1,0 +1,49 @@
+@import "../_variables/common";
+@import "../_variables/sizes";
+@import "../_variables/typography";
+
+@mixin tn-table() {
+  width: 100%;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+@mixin tn-table--bordered() {
+  border: 1px solid $tn-color--gray-border;
+}
+
+@mixin tn-th() {
+  color: $tn-color--muted;
+  font-weight: normal;
+  vertical-align: bottom;
+}
+
+@mixin tn-table__cell() {
+  padding: $tn-spacing--small-element-nonbordered;
+  border-bottom: 1px solid $tn-color--gray-border;
+  text-align: left;
+}
+
+@mixin tn-table__cell--no-border-bottom() {
+  border-bottom: none;
+}
+
+@mixin tn-table__cell--centered() {
+  text-align: center;
+}
+
+@mixin tn-table__cell--separators() {
+  border-right: 1px solid $tn-color--gray-border;
+}
+
+@mixin tn-table__cell--no-border-right() {
+  border-right: none;
+}
+
+@mixin tn-table__row--accented() {
+  background-color: $tn-color--light-gray-background;
+}
+
+@mixin tn-table__row--accented--brand() {
+  background-color: rgba($tn-color--brand, .05);
+}
