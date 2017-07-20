@@ -2,18 +2,18 @@
 @import "../_variables/typography";
 
 /**
- * Heading styles can be applied to p tags or h1, h2,... tags.
+ * Heading styles should be applied to h1, h2,... tags.
  *
  * @atom Headings
  * @section Typography
  * @markup
- *  <p class="tn-h1">Heading .tn-h1</p>
+ *  <h1 class="tn-h1">Heading .tn-h1</h1>
  *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
  *  <h2 class="tn-h2">Heading .tn-h2</h2>
  *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
- *  <p class="tn-h3">Heading .tn-h3</p>
+ *  <h3 class="tn-h3">Heading .tn-h3</h3>
  *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
- *  <p class="tn-h4">Heading .tn-h4</p>
+ *  <h4 class="tn-h4">Heading .tn-h4</h4>
  *  <p class="tn-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nisl lorem, dapibus sed convallis quis, sollicitudin accumsan dui. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum faucibus arcu eget nisi posuere consectetur.</p>
  */
 .tn-h1 {
