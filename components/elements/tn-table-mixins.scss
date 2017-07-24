@@ -20,12 +20,15 @@
 
 @mixin tn-table__cell() {
   padding: $tn-spacing--small-element-nonbordered;
-  border-bottom: 1px solid $tn-color--gray-border;
   text-align: left;
 }
 
-@mixin tn-table__cell--no-border-bottom() {
-  border-bottom: none;
+@mixin tn-table__cell--border-top() {
+  border-top: 1px solid $tn-color--gray-border;
+}
+
+@mixin tn-table__cell--border-bottom() {
+  border-bottom: 1px solid $tn-color--gray-border;
 }
 
 @mixin tn-table__cell--centered() {

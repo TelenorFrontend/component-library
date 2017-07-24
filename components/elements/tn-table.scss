@@ -116,6 +116,16 @@
     @include tn-table__cell--centered;
   }
 
+  .tn-tr + .tn-tr > .tn-td,
+  .tn-tr + .tn-tr > .tn-th {
+    @include tn-table__cell--border-top;
+  }
+
+  .tn-thead .tn-tr > .tn-td,
+  .tn-thead .tn-tr > .tn-th {
+    @include tn-table__cell--border-bottom;
+  }
+
   &--separators {
     .tn-th,
     .tn-td {
@@ -143,9 +153,4 @@
       @include tn-table__row--accented--brand;
     }
   }
-}
-
-.tn-tbody .tn-tr:last-child > .tn-th,
-.tn-tbody .tn-tr:last-child > .tn-td {
-  @include tn-table__cell--no-border-bottom;
 }
