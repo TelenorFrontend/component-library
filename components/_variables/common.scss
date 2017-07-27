@@ -74,7 +74,7 @@ $tn-animation-speed--quick: 150ms;
  */
 @mixin tn-border-box-everything() {
   box-sizing: border-box;
-  /* stylelint-disable-next-line selector-no-universal */
+  /* stylelint-disable-next-line selector-max-universal */
   > * {
     box-sizing: border-box;
   }
