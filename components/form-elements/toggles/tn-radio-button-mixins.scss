@@ -8,6 +8,7 @@
   display: inline-block;
   position: relative;
   height: $tn-height--toggle;
+  line-height: $tn-height--toggle;
 }
 
 @mixin tn-radiowrap__radio {
