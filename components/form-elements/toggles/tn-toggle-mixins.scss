@@ -11,6 +11,7 @@ $tn-toggle-slide-width: 36px;
   display: inline-block;
   position: relative;
   height: $tn-height--toggle;
+  line-height: $tn-height--toggle;
 }
 
 @mixin tn-toggle__checkbox {
