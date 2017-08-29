@@ -12,7 +12,7 @@
     "start": "gulp",
     "test": "npm run test:stylelint",
     "test:stylelint": "stylelint components/**/*.scss",
-    "watch": "gulp styleguide:watch"
+    "watch": "gulp tn-styleguide:watch"
   },
   "repository": {
     "type": "git",

@@ -27,7 +27,7 @@ gulp.task('connect:reload', function () {
     ]).pipe(connect.reload());
 });
 
-gulp.task('styleguide', (cb) => {
+gulp.task('tn-styleguide', (cb) => {
     exec('nucleus', function (err, stdout, stderr) {
         console.log(stdout);
         console.error(stderr);
@@ -36,7 +36,7 @@ gulp.task('styleguide', (cb) => {
 });
 
 gulp.task('sass', () => {
-    return gulp.src([`${ componentsFolder }/styleguide.scss`])
+    return gulp.src([`${ componentsFolder }/tn-styleguide.scss`])
         .pipe(plumber())
         .pipe(gulpStylelint({
             reporters: [
@@ -52,9 +52,9 @@ gulp.task('sass', () => {
 gulp.task('sass:watch', () => {
     gulp.watch(
         [`${ componentsFolder }/*.scss`, `${ componentsFolder }/**/*.scss`],
-        ['sass', 'styleguide', 'connect:reload']
+        ['sass', 'tn-styleguide', 'connect:reload']
     );
 });
 
-gulp.task('styleguide:watch', ['styleguide', 'sass', 'connect', 'sass:watch'])
-gulp.task('default', ['styleguide', 'sass']);
+gulp.task('tn-styleguide:watch', ['tn-styleguide', 'sass', 'connect', 'sass:watch'])
+gulp.task('default', ['tn-styleguide', 'sass']);
