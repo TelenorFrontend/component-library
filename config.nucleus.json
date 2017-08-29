@@ -4,7 +4,7 @@
     "components/**/*.scss"
   ],
   "target": "dist",
-  "css": "styles/styleguide.css",
+  "css": "styles/tn-styleguide.css",
   "namespace": "page",
   "verbose": 3,
   "counterCSS": null,
